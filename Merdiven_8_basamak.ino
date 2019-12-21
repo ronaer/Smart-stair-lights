@@ -21,7 +21,7 @@ void setup() {
   pinMode(pir_pin_up, INPUT); // üstteki pir sensor pini giriş tanımlandı
   pinMode(pir_pin_down, INPUT); // alttaki pir sensor pini giriş tanımlandı
 
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     pinMode(merdiven_led_up[i], OUTPUT); //dizideki tüm ledler çıkış olarak ayarlandı
     pinMode(merdiven_led_down[i], OUTPUT); //dizideki tüm ledler çıkış olarak ayarlandı
@@ -57,13 +57,13 @@ void loop()
 
 void stairs_from_up() // üstten merdivene ayak basıldığında çalışacak fonksiyon
   {
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     digitalWrite(merdiven_led_up[i], HIGH);
     delay(y);
   }
   delay(b);
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     digitalWrite(merdiven_led_up[i], LOW);
     delay(s);
@@ -73,13 +73,13 @@ void stairs_from_up() // üstten merdivene ayak basıldığında çalışacak fo
 
 void stairs_from_down()  // alltan merdivene ayak basıldığında çalışacak fonksiyon
 {
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     digitalWrite(merdiven_led_down[i], HIGH);
     delay(y);
   }
   delay(b);
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     digitalWrite(merdiven_led_down[i], LOW);
     delay(s);
@@ -90,7 +90,7 @@ void stairs_from_down()  // alltan merdivene ayak basıldığında çalışacak 
 
 void kapat() // if komut şartlarının oluşmadığı durumda çalışacak fonksiyon
 {
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 8; i++)
   {
     digitalWrite(merdiven_led_up[i], LOW);
     digitalWrite(merdiven_led_down[i], LOW);

@@ -1,5 +1,5 @@
 /*Basamak sayısı: 16; Sensör: MZ80 Relay: Logic 0
- *Authored by TR.ALP.18 youTube @June/2020
+ *Authored by Dr.TRonik youTube @June/2020
  *Açık kaynak lisansı altında kullanılabilir, dağıtılabilir, geliştirilebilir...
  *Konu ile ilgili soru ve sorunlar için: bilgi@ronaer.com
  *Programı nano ya yükledikten sonra bağlantıları yapınız... 
@@ -107,4 +107,7 @@ void kapat() // if komut şartlarının oluşmadığı durumda çalışacak fonk
 
   }
 }
-//YouTube>>>TR.ALP.18 
+/*e-posta: bilgi@ronaer.com
+ *https://www.instagram.com/dr.tronik2022/   
+ *YouTube: Dr.TRonik: www.youtube.com/c/DrTRonik
+*/
